@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Toopfy Guia de Estilos</title>
+
+    <link
+      rel="stylesheet"
+      href="./dist/materialize/css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link rel="stylesheet" href="./dist/css/toopfy.guide.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col s12">
+        <h3>Floating Action Button</h3>
+        <a class="btn btn-large warning" href="index.html">Voltar</a>
+        <p>
+          O FAB - Floating Action Button são os exemplos embaixo da tela
+        </p>
+        <div id="example1" class="fixed-action-btn">
+          <a class="btn-floating btn-large">
+            <i class="large material-icons">mode_edit</i>
+          </a>
+          <ul>
+            <li>
+              <a class="btn-floating red"
+                ><i class="material-icons">insert_chart</i></a
+              >
+            </li>
+            <li>
+              <a class="btn-floating yellow darken-1"
+                ><i class="material-icons">format_quote</i></a
+              >
+            </li>
+            <li>
+              <a class="btn-floating green"
+                ><i class="material-icons">publish</i></a
+              >
+            </li>
+            <li>
+              <a class="btn-floating blue"
+                ><i class="material-icons">attach_file</i></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div id="example2" class="fixed-action-btn" style="right: 100px">
+          <a class="btn-floating btn-large energy">
+            <i class="large material-icons">mode_edit</i>
+          </a>
+          <ul>
+            <li>
+              <a class="btn-floating red"
+                ><i class="material-icons">insert_chart</i></a
+              >
+            </li>
+            <li>
+              <a class="btn-floating yellow darken-1"
+                ><i class="material-icons">format_quote</i></a
+              >
+            </li>
+            <li>
+              <a class="btn-floating green"
+                ><i class="material-icons">publish</i></a
+              >
+            </li>
+            <li>
+              <a class="btn-floating blue"
+                ><i class="material-icons">attach_file</i></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div id="example3" class="fixed-action-btn" style="right: 180px">
+          <a class="btn-floating btn-large danger">
+            <i class="large material-icons">mode_edit</i>
+          </a>
+          <ul>
+            <li>
+              <a class="btn-floating red"
+                ><i class="material-icons">insert_chart</i></a
+              >
+            </li>
+            <li>
+              <a class="btn-floating yellow darken-1"
+                ><i class="material-icons">format_quote</i></a
+              >
+            </li>
+            <li>
+              <a class="btn-floating green"
+                ><i class="material-icons">publish</i></a
+              >
+            </li>
+            <li>
+              <a class="btn-floating blue"
+                ><i class="material-icons">attach_file</i></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div id="example4" class="fixed-action-btn" style="right: 260px">
+            <a class="btn-floating btn-large btn-ghost danger">
+              <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+              <li>
+                <a class="btn-floating red"
+                  ><i class="material-icons">insert_chart</i></a
+                >
+              </li>
+              <li>
+                <a class="btn-floating yellow darken-1"
+                  ><i class="material-icons">format_quote</i></a
+                >
+              </li>
+              <li>
+                <a class="btn-floating green"
+                  ><i class="material-icons">publish</i></a
+                >
+              </li>
+              <li>
+                <a class="btn-floating blue"
+                  ><i class="material-icons">attach_file</i></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div id="example5" class="fixed-action-btn" style="right: 340px">
+              <a class="btn-floating btn-large btn-ghost success">
+                <i class="large material-icons">mode_edit</i>
+              </a>
+              <ul>
+                <li>
+                  <a class="btn-floating red"
+                    ><i class="material-icons">insert_chart</i></a
+                  >
+                </li>
+                <li>
+                  <a class="btn-floating yellow darken-1"
+                    ><i class="material-icons">format_quote</i></a
+                  >
+                </li>
+                <li>
+                  <a class="btn-floating green"
+                    ><i class="material-icons">publish</i></a
+                  >
+                </li>
+                <li>
+                  <a class="btn-floating blue"
+                    ><i class="material-icons">attach_file</i></a
+                  >
+                </li>
+              </ul>
+            </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./dist/materialize/js/materialize.min.js"></script>
+    <script>
+      //FAB floating action button
+      $(document).ready(function() {
+        $("#example1").floatingActionButton();
+
+        $("#example2").floatingActionButton();
+
+        $("#example3").floatingActionButton();
+
+        $("#example4").floatingActionButton({
+          direction: "top",
+          hoverEnabled: false
+        });
+
+        $("#example5").floatingActionButton({
+          direction: "left",
+          hoverEnabled: false
+        });
+      });
+    </script>
+  </body>
+</html>

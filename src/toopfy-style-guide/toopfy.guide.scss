@@ -1,0 +1,1263 @@
+// @import '../materialize/css/materialize.min.css';
+
+/* Cores */
+$color-dark: black;
+$color-white: white;
+$color-ghost: transparent;
+
+// $color-primary: #04024E;
+// $color-primary-dark: #0F002B;
+// $color-primary-light: #7E7BFC;
+// $color-primary-highlight: #C9C7FE;
+$color-primary: #0B05E8;
+$color-primary-dark: #03018C;
+$color-primary-light: #7E7AFC;
+$color-primary-highlight: #C8C7FE;
+
+$color-secondary: #7E7AFC;
+$color-secondary-dark: #4640FB;
+$color-secondary-light: #C8C7FE;
+$color-secondary-highlight: #EEEDFF;
+
+// $color-info: #0B05E8;
+// $color-info-dark: #03018C;
+// $color-info-light: #7E7AFC;
+// $color-info-highlight: #C8C7FE;
+$color-info: #04024E;
+$color-info-dark: #0F002B;
+$color-info-light: #7E7BFC;
+$color-info-highlight: #C9C7FE;
+
+
+$color-energy: #E2E805;
+$color-energy-dark: #BDC204;
+$color-energy-light: #F9FC7A;
+$color-energy-highlight: #FCFEC7;
+
+$color-warning: #E87D05;
+$color-warning-dark: #C26804;
+$color-warning-light: #FDD1A1;
+$color-warning-highlight: #FEE4C7;
+
+$color-danger: #E80B05;
+$color-danger-dark: #8C0502;
+$color-danger-light: #FD908D;
+$color-danger-highlight: #FEC8C7;
+
+$color-success: #71E805;
+$color-success-dark: #04C209;
+$color-success-light: #8DFD90;
+$color-success-highlight: #DAFEDB;
+
+
+/* -- Fontes -- */
+$font-family-default: "BalooBhaiRegular", Arial, Helvetica, sans-serif;
+$font-family-default-size: 16px;
+$font-family-default-color: $color-primary;
+
+$font-family-default-size-h1: 32px;
+$font-family-default-size-h2: $font-family-default-size-h1 - 4px;
+$font-family-default-size-h3: $font-family-default-size-h2 - 4px;
+$font-family-default-size-h4: $font-family-default-size-h3 - 4px;
+$font-family-default-size-h5: $font-family-default-size-h4 - 4px;
+
+
+@font-face {
+  font-family: "BalooBhaiRegular";
+  src: url("../font/baloo-bhai-regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../font/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../font/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/material-icons.woff2) format('woff2');
+}
+
+/* -- Fontes - Padrões -- */
+*, button {
+  font-family: $font-family-default;
+}
+
+h1, h2, h3, h4, h5, p, li, div, .collection, .collection a.collection-item {
+  color: $font-family-default-color;
+}
+
+h1 {
+  font-size: $font-family-default-size-h1;
+}
+
+h2 {
+  font-size: $font-family-default-size-h2;
+}
+
+h3 {
+  font-size: $font-family-default-size-h3;
+}
+
+h4 {
+  font-size: $font-family-default-size-h4;
+}
+
+h5 {
+  font-size: $font-family-default-size-h5;
+}
+
+hr {
+  border: none;
+  border-bottom: 5px solid $color-primary-dark;
+  margin: 30px 0;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* -- Botões -- */
+
+.padrao {
+  padding: 0 15px;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: $color-primary;
+  box-shadow: none;
+}
+
+.btn, .btn-floating, .btn-large, .btn-small {
+  
+  @extend .padrao;
+
+  border-radius: 20px;
+  background-color: $color-primary;
+  color: white;
+  border-bottom: 5px solid;
+  border-color: $color-primary-dark;
+
+  &.btn-large {
+    border-radius: 40px;
+  }
+
+  &:active {
+    border: none;
+    box-shadow: 0px -5px 1px $color-primary-dark;
+    background-color: $color-primary;
+  }
+
+  &:hover {
+    background-color: $color-primary-dark;
+    box-shadow: none;
+  }
+
+  &.btn:focus, &.btn-large:focus, &.btn-small:focus, &.btn-floating:focus {
+    background-color: $color-primary-dark;
+  }
+
+  &.disabled {
+    // border: none;
+    background-color: $color-primary-highlight;
+    border-color: $color-primary-light;
+    color: $color-primary-light !important;
+
+    .material-icons {
+      color: $color-primary-light;
+    }
+  }
+
+  &.btn-ghost {
+    border: none;
+    border: 5px solid;
+    line-height: 26px;
+
+    background-color: $color-ghost;
+    border-color: $color-primary;
+    color: $color-primary;
+
+    &.btn-large { 
+      line-height: 48px;
+    }
+
+    &.btn-small { 
+      line-height: 26px;
+    }
+
+    &.btn-floating {
+      .material-icons {
+        margin: -5px;
+        color: $color-primary;
+      }
+    }
+
+    &:active {
+      border: none;
+      border: 5px solid $color-secondary;
+      box-shadow: none;
+    }
+
+    &:focus {
+      background-color: $color-ghost;
+    }
+
+    &:hover {
+      background-color: $color-ghost;
+      border-color: $color-primary-dark;
+      color: $color-primary-dark;
+
+      .material-icons {
+        color: $color-primary-dark;
+      }
+    }
+
+    &.secondary {
+      color: $color-secondary;
+      border-color: $color-secondary;
+      background-color: $color-ghost;
+  
+      &:active {
+        border: none;
+        border: 5px solid $color-secondary;
+        box-shadow: none;
+      }
+    
+      &:hover {
+        background-color: $color-ghost;
+        border-color: $color-secondary-dark;
+        color: $color-secondary-dark;
+
+        .material-icons {
+          color: $color-secondary-dark;
+        }
+      }
+  
+      &.btn:focus, &.btn-large:focus, &.btn-small:focus, &.btn-floating:focus {
+        background-color: $color-ghost;
+      }
+
+      .material-icons {
+        color: $color-secondary;
+      }
+    }
+
+    
+    &.info {
+      color: $color-info;
+      border-color: $color-info;
+      background-color: $color-ghost;
+  
+      &:active {
+        border: none;
+        border: 5px solid $color-info;
+        box-shadow: none;
+      }
+    
+      &:hover {
+        background-color: $color-ghost;
+        border-color: $color-info-dark;
+        color: $color-info-dark;
+
+        .material-icons {
+          color: $color-info-dark;
+        }
+      }
+  
+      &.btn:focus, &.btn-large:focus, &.btn-small:focus, &.btn-floating:focus {
+        background-color: $color-ghost;
+      }
+
+      .material-icons {
+        color: $color-info;
+      }
+    }
+
+    &.energy {
+      color: $color-energy;
+      border-color: $color-energy;
+      background-color: $color-ghost;
+  
+      &:active {
+        border: none;
+        border: 5px solid $color-energy;
+        box-shadow: none;
+      }
+    
+      &:hover {
+        background-color: $color-ghost;
+        border-color: $color-energy-dark;
+        color: $color-energy-dark;
+
+        .material-icons {
+          color: $color-energy-dark;
+        }
+      }
+  
+  
+      &.btn:focus, &.btn-large:focus, &.btn-small:focus, &.btn-floating:focus {
+        background-color: $color-ghost;
+      }
+
+      .material-icons {
+        color: $color-energy;
+      }
+    }
+
+    &.warning {
+      color: $color-warning;
+      border-color: $color-warning;
+      background-color: $color-ghost;
+  
+      &:active {
+        border: none;
+        border: 5px solid $color-warning;
+        box-shadow: none;
+      }
+    
+      &:hover {
+        background-color: $color-ghost;
+        border-color: $color-warning-dark;
+        color: $color-warning-dark;
+
+        .material-icons {
+          color: $color-warning-dark;
+        }
+      }
+  
+      &.btn:focus, &.btn-large:focus, &.btn-small:focus, &.btn-floating:focus {
+        background-color: $color-ghost;
+      }
+
+      .material-icons {
+        color: $color-warning;
+      }
+    }
+
+    &.danger {
+      color: $color-danger;
+      border-color: $color-danger;
+      background-color: $color-ghost;
+  
+      &:active {
+        border: none;
+        border: 5px solid $color-danger;
+        box-shadow: none;
+      }
+    
+      &:hover {
+        background-color: $color-ghost;
+        border-color: $color-danger-dark;
+        color: $color-danger-dark;
+
+        .material-icons {
+          color: $color-danger-dark;
+        }
+      }
+  
+      &.btn:focus, &.btn-large:focus, &.btn-small:focus, &.btn-floating:focus {
+        background-color: $color-ghost;
+      }
+
+      .material-icons {
+        color: $color-danger;
+      }
+    }
+
+    &.success {
+      color: $color-success;
+      border-color: $color-success;
+      background-color: $color-ghost;
+  
+      &:active {
+        border: none;
+        border: 5px solid $color-success;
+        box-shadow: none;
+      }
+    
+      &:hover {
+        background-color: $color-ghost;
+        border-color: $color-success-dark;
+        color: $color-success-dark;
+
+        .material-icons {
+          color: $color-success-dark;
+        }
+      }
+  
+      &.btn:focus, &.btn-large:focus, &.btn-small:focus, &.btn-floating:focus {
+        background-color: $color-ghost;
+      }
+
+      .material-icons {
+        color: $color-success;
+      }
+    }
+  }
+
+  &.secondary {
+    background-color: $color-secondary;
+    border-color: $color-secondary-dark;
+
+    &:active {
+      border: none;
+      box-shadow: 0px -5px 1px $color-secondary-dark;
+      background-color: $color-secondary;
+    }
+  
+    &:hover {
+      background-color: $color-secondary-dark;
+    }
+
+    &.btn:focus, &.btn-large:focus, &.btn-small:focus, &.btn-floating:focus {
+      background-color: $color-secondary-dark;
+    }
+  }
+
+  &.info {
+    background-color: $color-info;
+    border-color: $color-info-dark;
+
+    &:active {
+      border: none;
+      box-shadow: 0px -5px 1px $color-info-dark;
+      background-color: $color-info;
+    }
+  
+    &:hover {
+      background-color: $color-info-dark;
+    }
+
+    &.btn:focus, &.btn-large:focus, &.btn-small:focus, &.btn-floating:focus {
+      background-color: $color-info-dark;
+    }
+  }
+
+  &.energy {
+    background-color: $color-energy;
+    border-color: $color-energy-dark;
+
+    &:active {
+      border: none;
+      box-shadow: 0px -5px 1px $color-energy-dark;
+      background-color: $color-energy;
+    }
+  
+    &:hover {
+      background-color: $color-energy-dark;
+    }
+
+    &.btn:focus, &.btn-large:focus, &.btn-small:focus, &.btn-floating:focus {
+      background-color: $color-energy-dark;
+    }
+  }
+
+  &.warning {
+    background-color: $color-warning;
+    border-color: $color-warning-dark;
+
+    &:active {
+      border: none;
+      box-shadow: 0px -5px 1px $color-warning-dark;
+      background-color: $color-warning;
+    }
+  
+    &:hover {
+      background-color: $color-warning-dark;
+    }
+
+    &.btn:focus, &.btn-large:focus, &.btn-small:focus, &.btn-floating:focus {
+      background-color: $color-warning-dark;
+    }
+  }
+
+  &.danger {
+    background-color: $color-danger;
+    border-color: $color-danger-dark;
+
+    &:active {
+      border: none;
+      box-shadow: 0px -5px 1px $color-danger-dark;
+      background-color: $color-danger;
+    }
+  
+    &:hover {
+      background-color: $color-danger-dark;
+    }
+
+    &.btn:focus, &.btn-large:focus, &.btn-small:focus, &.btn-floating:focus {
+      background-color: $color-danger-dark;
+    }
+  }
+
+  &.success {
+    background-color: $color-success;
+    border-color: $color-success-dark;
+
+    &:active {
+      border: none;
+      box-shadow: 0px -5px 1px $color-success-dark;
+      background-color: $color-success;
+    }
+  
+    &:hover {
+      background-color: $color-success-dark;
+    }
+
+    &.btn:focus, &.btn-large:focus, &.btn-small:focus, &.btn-floating:focus {
+      background-color: $color-success-dark;
+    }
+  }
+}
+
+.btn-flat {
+  
+  @extend .padrao;
+
+  &.disabled{
+    color: $color-primary-light !important;
+  }
+
+  &.secondary {
+    color: $color-secondary;
+
+    &:hover {
+      color: $color-secondary-dark;
+    }
+  }
+
+  &.info {
+    color: $color-info;
+
+    &:hover {
+      color: $color-info-dark;
+    }
+  }
+
+  &.energy {
+    color: $color-energy;
+
+    &:hover {
+      color: $color-energy-dark;
+    }
+  }
+
+  &.warning {
+    color: $color-warning;
+
+    &:hover {
+      color: $color-warning-dark;
+    }
+  }
+
+  &.danger {
+    color: $color-danger;
+
+    &:hover {
+      color: $color-danger-dark;
+    }
+  }
+
+  &.success {
+    color: $color-success;
+
+    &:hover {
+      color: $color-success-dark;
+    }
+  }
+}
+
+/* -- BADGES -- */
+
+span.badge.new {
+  background-color: $color-primary;  
+
+  &.secondary {
+    background-color: $color-secondary; 
+  }
+
+  &.info {
+    background-color: $color-info; 
+  }
+
+  &.energy {
+    background-color: $color-energy; 
+  }
+
+  &.warning {
+    background-color: $color-warning; 
+  }
+
+  &.danger {
+    background-color: $color-danger; 
+  }
+
+  &.success {
+    background-color: $color-success; 
+  }
+}
+
+/* -- COLLECTIONS -- */
+
+.collection {
+  border-radius: 16px;
+  border: 1px solid $color-primary-highlight;
+
+  .collection-item{
+    border-bottom: 1px solid  $color-primary-highlight;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &.secondary {
+      background-color: $color-secondary;
+      border-color: $color-secondary-dark;      
+      color: $color-white;
+      
+      &:hover{
+        background-color: $color-secondary-dark !important;
+      }
+    }
+  
+    &.info {
+      background-color: $color-info; 
+      border-color: $color-info-dark;      
+      color: $color-white; 
+
+      &:hover{
+        background-color: $color-info-dark !important;
+      }
+    }
+  
+    &.energy {
+      background-color: $color-energy;
+      border-color: $color-energy-dark;      
+      color: $color-white;
+      
+      &:hover{
+        background-color: $color-energy-dark !important;
+      }
+    }
+  
+    &.warning {
+      background-color: $color-warning;
+      border-color: $color-warning-dark;      
+      color: $color-white; 
+      
+      &:hover{
+        background-color: $color-warning-dark !important;
+      }
+    }
+  
+    &.danger {
+      background-color: $color-danger;
+      border-color: $color-danger-dark;      
+      color: $color-white;
+      
+      &:hover{
+        background-color: $color-danger-dark !important;
+      }
+    }
+  
+    &.success {
+      background-color: $color-success;
+      border-color: $color-success-dark;      
+      color: $color-white;  
+
+      &:hover{
+        background-color: $color-success  -dark !important;
+      }
+    }
+  }
+
+  a.collection-item:not(.active):hover {
+    color: $color-white;
+    background-color: $color-primary;
+  }
+
+}
+
+/* -- NAVBAR -- */
+
+nav {
+  background-color: $color-primary;
+  .dropdown-content {
+    text-shadow: none;
+  }
+
+  &.clear {
+    background-color: $color-white;
+    * {
+      color: $color-primary;
+    }
+
+  }
+
+  .nav-wrapper {
+    padding: 0 30px;
+
+    .sidenav-trigger {
+      margin: 0;
+    }
+
+    .hide-on-med-and-down {
+
+      li:last-child {
+        a  {
+          padding-right: 0;
+        }
+      }
+
+      li:first-child {
+        a {
+          padding-left: 0;
+        }
+      }
+
+      .dropdown-content { 
+        li a {
+          padding: 15px
+        }
+      }
+    }
+  }
+}
+
+/* --  COLLAPSE -- */
+
+.collapsible {
+  box-shadow: none;
+  border-color: $color-primary;
+  border: none;
+
+  .collapsible-header {
+    background-color: $color-primary;
+    color: $color-white;
+    border-color: $color-primary-dark;
+  }
+
+  .collapsible-body {
+    border: none;
+  }
+  
+  &.dark {
+    border-color: $color-primary;
+    .collapsible-header {
+      background-color: $color-primary;
+      color: $color-white;
+      border-color: $color-primary-dark;
+    }
+  }
+
+  &.clear {
+    border-color: $color-primary;
+    .collapsible-header {
+      background-color: $color-white;
+      color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+
+  &.clear.secondary {
+    border-color: $color-secondary;
+    .collapsible-header {
+      background-color: $color-white;
+      color: $color-secondary;
+      border-color: $color-secondary;
+    }
+    .collapsible-body {
+      color: $color-secondary;
+    }
+  }
+
+  &.clear.info {
+    border-color: $color-info;
+    .collapsible-header {
+      background-color: $color-white;
+      color: $color-info;
+      border-color: $color-info;
+    }
+    .collapsible-body {
+      color: $color-info;
+    }
+  }
+
+  &.clear.energy {
+    border-color: $color-energy;
+    .collapsible-header {
+      background-color: $color-white;
+      color: $color-energy;
+      border-color: $color-energy;
+    }
+    .collapsible-body {
+      color: $color-energy;
+    }
+  }
+
+  &.clear.warning {
+    border-color: $color-warning;
+    .collapsible-header {
+      background-color: $color-white;
+      color: $color-warning;
+      border-color: $color-warning;
+    }
+    .collapsible-body {
+      color: $color-warning;
+    }
+  }
+
+  &.clear.danger {
+    border-color: $color-danger;
+    .collapsible-header {
+      background-color: $color-white;
+      color: $color-danger;
+      border-color: $color-danger;
+    }
+    .collapsible-body {
+      color: $color-danger;
+    }
+  }
+
+  &.clear.success {
+    border-color: $color-success;
+    .collapsible-header {
+      background-color: $color-white;
+      color: $color-success;
+      border-color: $color-success;
+    }
+    .collapsible-body {
+      color: $color-success;
+    }
+  }
+
+  &.dark.secondary {
+    border-color: $color-secondary-dark;
+    .collapsible-header {
+      background-color: $color-secondary;
+      color: $color-white;
+      border-color: $color-secondary;
+    }
+    .collapsible-body {
+      color: $color-secondary;
+    }
+  }
+
+  &.dark.info {
+    border-color: $color-info-dark;
+    .collapsible-header {
+      background-color: $color-info;
+      color: $color-white;
+      border-color: $color-info;
+    }
+    .collapsible-body {
+      color: $color-info;
+    }
+  }
+
+  &.dark.energy {
+    border-color: $color-energy-dark;
+    .collapsible-header {
+      background-color: $color-energy;
+      color: $color-white;
+      border-color: $color-energy-dark;
+    }
+    .collapsible-body {
+      color: $color-energy;
+    }
+  }
+
+  &.dark.warning {
+    border-color: $color-warning-dark;
+    .collapsible-header {
+      background-color: $color-warning;
+      color: $color-white;
+      border-color: $color-warning-dark;
+    }
+    .collapsible-body {
+      color: $color-warning;
+    }
+  }
+
+  &.dark.danger {
+    border-color: $color-danger-dark;
+    .collapsible-header {
+      background-color: $color-danger;
+      color: $color-white;
+      border-color: $color-danger-dark;
+    }
+    .collapsible-body {
+      color: $color-danger;
+    }
+  }
+
+  &.dark.success {
+    border-color: $color-success-dark;
+    .collapsible-header {
+      background-color: $color-success;
+      color: $color-white;
+      border-color: $color-success-dark;
+    }
+    .collapsible-body {
+      color: $color-success;
+    }
+  }
+
+}
+
+/* -- DROPDOWN -- */
+.dropdown-content { 
+  border-radius: 20px;  
+
+  li:hover{
+    background-color: $color-primary-dark;
+    color: $color-white;
+    a{
+      color: $color-white;
+    }
+  }
+  li {
+    color: $color-primary;
+    &.divider { 
+      background-color: $color-primary-highlight;
+    }
+
+    a{
+      color: $color-primary;
+    }
+  }
+
+  &.secondary {
+    li:hover{
+      background-color: $color-secondary-dark;
+      color: $color-white;
+      a{
+        color: $color-white;
+      }
+    }
+    li {
+      color: $color-secondary;
+      &.divider { 
+        background-color: $color-secondary-highlight;
+      }
+  
+      a{
+        color: $color-secondary;
+      }
+    }
+  }
+
+  &.info {
+    li:hover{
+      background-color: $color-info-dark;
+      color: $color-white;
+      a{
+        color: $color-white;
+      }
+    }
+    li {
+      color: $color-info;
+      &.divider { 
+        background-color: $color-info-highlight;
+      }
+  
+      a{
+        color: $color-info;
+      }
+    }
+  }
+
+  &.energy {
+    li:hover{
+      background-color: $color-energy-dark;
+      color: $color-white;
+      a{
+        color: $color-white;
+      }
+    }
+    li {
+      color: $color-energy;
+      &.divider { 
+        background-color: $color-energy-highlight;
+      }
+  
+      a{
+        color: $color-energy;
+      }
+    }
+  }
+
+  &.warning {
+    li:hover{
+      background-color: $color-warning-dark;
+      color: $color-white;
+      a{
+        color: $color-white;
+      }
+    }
+    li {
+      color: $color-warning;
+      &.divider { 
+        background-color: $color-warning-highlight;
+      }
+  
+      a{
+        color: $color-warning;
+      }
+    }
+  }
+
+  &.danger {
+    li:hover{
+      background-color: $color-danger-dark;
+      color: $color-white;
+      a{
+        color: $color-white;
+      }
+    }
+    li {
+      color: $color-danger;
+      &.divider { 
+        background-color: $color-danger-highlight;
+      }
+  
+      a{
+        color: $color-danger;
+      }
+    }
+  }
+
+  &.success {
+    li:hover{
+      background-color: $color-success-dark;
+      color: $color-white;
+      a{
+        color: $color-white;
+      }
+    }
+    li {
+      color: $color-success;
+      &.divider { 
+        background-color: $color-success-highlight;
+      }
+  
+      a{
+        color: $color-success;
+      }
+    }
+  }
+}
+
+/* -- TABS -- */
+.tabs {
+
+  .indicator {
+    background-color: $color-primary-dark; 
+    border-bottom: 4px solid $color-primary-dark; 
+  }
+  
+  .tab {
+    color: $color-white;
+    background-color: $color-primary;
+
+    a {
+      color: $color-white;
+      &focus.active {
+        // border: none !important;            
+        border-bottom: 4px solid $color-primary-dark;
+        background-color: $color-primary;
+        color: $color-white;
+      }
+    }
+
+    &.disabled a, &.disabled a:hover {
+      color: $color-primary-light;
+    }
+
+    &.disabled a:focus, &.disabled a:focus.active {
+      color: $color-primary-light;
+      background-color: $color-primary;
+      border: none;
+    }
+
+    a:focus, a:focus.active {
+      background-color: $color-primary-dark;
+      color: $color-white;
+      border-bottom: 4px solid $color-primary-dark;
+    }
+
+    a:hover, a.active {
+      color: $color-white;
+      border-bottom: 4px solid $color-primary-dark;
+    }
+
+    a:visited {
+      color: $color-white;
+      background-color: $color-white;
+      border-bottom: 4px solid $color-primary-dark;
+    }
+
+  }
+
+  &.clear {
+    
+    .indicator {
+      background-color: $color-primary-dark; 
+      border-bottom: 4px solid $color-primary-dark; 
+    }
+    
+    .tab {
+      color: $color-primary;
+      background-color: $color-white;
+
+      a {
+        color: $color-primary;
+
+        &focus.active {          
+          border-bottom: 4px solid $color-primary-dark;
+          background-color: $color-primary;
+          color: $color-white;
+        }
+      }
+
+      &.disabled a, &.disabled a:hover {
+        color: $color-primary-light;
+      }
+
+      &.disabled a:focus, &.disabled a:focus.active {
+        color: $color-primary-light;
+        background-color: $color-white;
+        border: none;
+      }
+
+      a:focus, a:focus.active {
+        background-color: $color-primary;
+        color: $color-white;
+        border-bottom: 4px solid $color-primary-dark;
+      }
+
+      a:hover, a.active {
+        color: $color-primary;
+        border-bottom: 4px solid $color-primary-dark;
+      }
+
+      a:visited {
+        color: $color-primary;
+        background-color: $color-white;
+        border-bottom: 4px solid $color-primary-dark;
+      }
+
+    }
+  }
+}
+
+/** -- TABLES -- **/
+
+
+/** -- PAGINATION -- **/
+
+.pagination {
+  
+  li {
+
+    color: $color-primary;
+    
+    a {
+      color: $color-primary;
+    }
+
+    &.disabled a{
+      color: $color-primary-light;
+    }
+
+    &.active {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+}
+
+/** -- FOOTER -- **/
+.page-footer {
+  color: $color-white;
+  background-color: $color-primary;
+
+  .footer-copyright {
+    color: $color-white;
+
+    .container{
+      color: $color-white;
+    }
+  }
+}
+
+/** Floating Action Button - FAB -- **/
+.fixed-action-btn {
+  ul li .btn-floating{
+    border: none;
+    padding: 0;
+  }
+}
+
+/** -- CARDS -- **/
+.card{
+  &.horizontal {
+    border-bottom: 5px solid $color-primary;
+    border-radius: 0;
+
+    .card-image.col{
+      padding: 0;
+    }
+  }
+
+  &.horizontal .card-image {
+    img{
+      border-radius: 0;
+    }
+  }
+
+  .card-action {
+    padding: 15px;  
+    border-top: 1px solid $color-primary-highlight;
+
+    a {
+      margin: 0 15px 15px 0;
+    }
+  }
+
+  .card-content {
+    padding: 15px;
+
+    .card-content-title {
+      margin-top: 0;
+    }
+  }
+}
+
+/** -- SPAN WITH ICONS -- **/
+.span-with-icons {
+  margin-right: 15px;
+  i {
+    transform: translateY(25%);
+  }
+}
+
+
+
+
+

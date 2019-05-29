@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Toopfy Guia de Estilos</title>
+
+    <link
+      rel="stylesheet"
+      href="./dist/materialize/css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link rel="stylesheet" href="./dist/css/toopfy.guide.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col s12">
+        <h1>Toopfy Guia de Estilos</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s3">
+        <aside>
+          <h3>Menu</h3>
+          <div class="collection">
+            <a class="collection-item" href="#fonts">Fontes</a>
+            <a class="collection-item" href="#buttons">Botões</a>
+            <a class="collection-item" href="#bagdes">Broches</a>
+            <a class="collection-item" href="#collections">Coleções</a>
+            <a class="collection-item" href="#navbars">Menu do Topo</a>
+            <a class="collection-item" href="#collapses">Expandir/Contrair</a>
+            <a class="collection-item" href="#dropdown">Dropdown</a>
+            <a class="collection-item" href="#tabs">Tabulação</a>
+            <a class="collection-item" href="#tables">Tabelas</a>
+            <a class="collection-item" href="#pagination">Paginação</a>
+            <a class="collection-item" href="#footer">Rodapé</a>
+            <a class="collection-item" href="#floating-button">FAB</a>
+            <a class="collection-item" href="#cards">Cards</a>
+            
+          </div>
+        </aside>
+      </div>
+      <div class="col s9 offset-s3">
+        <section id="fonts">
+          <h3>Fontes</h3>
+          <h1>Texto de exemplo com h1</h1>
+          <h2>Texto de exemplo com h2</h2>
+          <h3>Texto de exemplo com h3</h3>
+          <h4>Texto de exemplo com h4</h4>
+          <h5>Texto de exemplo com h5</h5>
+        </section>
+
+        <hr />
+
+        <section id="buttons">
+          <h3>Botões</h3>
+          <h5>Normais</h5>
+          <a class="btn waves-light waves-effect">button</a>
+          <a class="waves-effect waves-light btn"
+            ><i class="material-icons left">cloud</i>button</a
+          >
+          <a class="waves-effect waves-light btn"
+            ><i class="material-icons right">cloud</i>button</a
+          >
+
+          <a class="btn waves-light waves-effect secondary"
+            ><i class="material-icons right">cloud</i>Secondary</a
+          >
+
+          <a class="btn waves-light waves-effect info"
+            ><i class="material-icons right">cloud</i>Info</a
+          >
+
+          <a class="btn waves-light waves-effect energy"
+            ><i class="material-icons right">cloud</i>Energy</a
+          >
+
+          <a class="btn waves-light waves-effect warning"
+            ><i class="material-icons right">cloud</i>Warning</a
+          >
+
+          <a class="btn waves-light waves-effect danger"
+            ><i class="material-icons right">cloud</i>Danger</a
+          >
+
+          <a class="btn waves-light waves-effect success"
+            ><i class="material-icons right">cloud</i>Success</a
+          >
+
+          <h5>Flutuante</h5>
+          <a class="btn-floating btn-large waves-effect waves-light"
+            ><i class="material-icons">add</i></a
+          >
+
+          <a class="btn-floating btn-large waves-effect waves-light secondary"
+            ><i class="material-icons">add</i></a
+          >
+          <a class="btn-floating btn-large waves-effect waves-light info"
+            ><i class="material-icons">add</i></a
+          >
+          <a class="btn-floating btn-large waves-effect waves-light energy"
+            ><i class="material-icons">add</i></a
+          >
+          <a class="btn-floating btn-large waves-effect waves-light warning"
+            ><i class="material-icons">add</i></a
+          >
+          <a class="btn-floating btn-large waves-effect waves-light danger"
+            ><i class="material-icons">add</i></a
+          >
+          <a class="btn-floating btn-large waves-effect waves-light success"
+            ><i class="material-icons">add</i></a
+          >
+
+          <h5>Flat</h5>
+          <a class="waves-effect waves-dark btn-flat">Button</a>
+
+          <h5>Submissão</h5>
+          <button
+            class="btn waves-effect waves-light"
+            type="submit"
+            name="action"
+          >
+            Submit
+            <i class="material-icons right">send</i>
+          </button>
+
+          <h5>Tamanhos - Grande</h5>
+          <a class="waves-effect waves-light btn-large">Large</a>
+          <a class="waves-effect waves-light btn-large"
+            ><i class="material-icons left">cloud</i>Large</a
+          >
+          <a class="waves-effect waves-light btn-large"
+            ><i class="material-icons right">cloud</i>Large</a
+          >
+
+          <h5>Tamanhos - Pequeno</h5>
+          <a class="waves-effect waves-light btn-small">Small</a>
+          <a class="waves-effect waves-light btn-small"
+            ><i class="material-icons left">cloud</i>Small</a
+          >
+          <a class="waves-effect waves-light btn-small"
+            ><i class="material-icons right">cloud</i>Small</a
+          >
+
+          <h5>Disabilitado</h5>
+          <a class="btn-large disabled">Button</a>
+          <a class="btn disabled">Button</a>
+          <a class="btn-flat disabled">Button</a>
+          <a class="btn-floating btn-large disabled"
+            ><i class="material-icons">add</i></a
+          >
+
+          <h5>Clear / Ghost</h5>
+          <a class="btn-large btn-ghost">Primary</a>
+          <a class="btn btn-ghost secondary"
+            ><i class="material-icons right">cloud</i>Secondary</a
+          >
+          <a class="btn btn-ghost info"
+            ><i class="material-icons left">cloud</i>Secondary</a
+          >
+          <a class="btn btn-ghost energy"
+            ><i class="material-icons right">cloud</i>Secondary</a
+          >
+          <a class="btn btn-ghost warning"
+            ><i class="material-icons right">cloud</i>Secondary</a
+          >
+          <a class="btn btn-ghost danger"
+            ><i class="material-icons right">cloud</i>Secondary</a
+          >
+          <a class="btn btn-ghost success"
+            ><i class="material-icons right">cloud</i>Secondary</a
+          >
+
+          <a class="btn-flat btn-ghost secondary"
+            ><i class="material-icons right">cloud</i>Secondary</a
+          >
+          <a class="btn-flat btn-ghost info"
+            ><i class="material-icons right">cloud</i>Info</a
+          >
+          <a class="btn-flat btn-ghost energy"
+            ><i class="material-icons right">cloud</i>Energy</a
+          >
+          <a class="btn-flat btn-ghost warning"
+            ><i class="material-icons right">cloud</i>Warning</a
+          >
+          <a class="btn-flat btn-ghost danger"
+            ><i class="material-icons right">cloud</i>Danger</a
+          >
+          <a class="btn-flat btn-ghost success"
+            ><i class="material-icons right">cloud</i>Success</a
+          >
+
+          <a class="btn-floating btn-large btn-ghost secondary"
+            ><i class="material-icons">add</i></a
+          >
+          <a class="btn-floating btn-large btn-ghost info"
+            ><i class="material-icons">add</i></a
+          >
+          <a class="btn-floating btn-large btn-ghost energy"
+            ><i class="material-icons">add</i></a
+          >
+          <a class="btn-floating btn-large btn-ghost warning"
+            ><i class="material-icons">add</i></a
+          >
+          <a class="btn-floating btn-large btn-ghost danger"
+            ><i class="material-icons">add</i></a
+          >
+          <a class="btn-floating btn-large btn-ghost success"
+            ><i class="material-icons">add</i></a
+          >
+        </section>
+
+        <hr />
+
+        <section id="bagdes">
+          <h3>Bagdes</h3>
+          <div style="margin-bottom: 60px">
+            <span class="badge new">10</span>
+            <span class="badge new secondary">12</span>
+            <span class="badge new info">32</span>
+            <span class="badge new energy">4</span>
+            <span class="badge new warning">01</span>
+            <span class="badge new danger">007</span>
+            <span class="badge new success">100</span>
+          </div>
+        </section>
+
+        <hr />
+
+        <section id="collections">
+          <h3>Collections</h3>
+          <div class="collection">
+            <a class="collection-item">Item 1</a>
+            <a class="collection-item">Item 2</a>
+            <a class="collection-item"
+              >Item 3
+              <span class="badge new success" data-badge-caption="1 novo"></span
+            ></a>
+            <a class="collection-item">Item 4</a>
+          </div>
+
+          <div class="collection">
+            <a class="collection-item">Item 1</a>
+            <a class="collection-item secondary">Item 2</a>
+            <a class="collection-item info"
+              >Item 3
+              <span class="badge new success" data-badge-caption="1 novo"></span
+            ></a>
+            <a class="collection-item energy">Item 4</a>
+            <a class="collection-item warning"
+              >Item 3
+              <span class="badge new danger" data-badge-caption="Error"></span
+            ></a>
+            <a class="collection-item danger">Item 4</a>
+            <a class="collection-item success">Item 4</a>
+          </div>
+        </section>
+
+        <hr />
+
+        <section id="navbars">
+          <h3>Navbar</h3>
+          <h5>Dark</h5>
+          <nav>
+            <div class="nav-wrapper">
+              <a href="#!" class="brand-logo"
+                ><i class="material-icons">cloud</i>Toopfy</a
+              >
+              <a href="#!" data-target="mobile-demo" class="sidenav-trigger"
+                ><i class="material-icons">menu</i></a
+              >
+              <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">Javascript</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+                <li>
+                  <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                    >Dropdown<i class="material-icons right"
+                      >arrow_drop_down</i
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <h5>Clear</h5>
+          <nav class="clear">
+            <div class="nav-wrapper">
+              <a href="#!" class="brand-logo"
+                ><i class="material-icons">cloud</i>Toopfy</a
+              >
+              <a href="#!" data-target="mobile-demo" class="sidenav-trigger"
+                ><i class="material-icons">menu</i></a
+              >
+              <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">Javascript</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+                <li>
+                  <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                    >Dropdown<i class="material-icons right"
+                      >arrow_drop_down</i
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+          </ul>
+
+          <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+          </ul>
+        </section>
+
+        <hr />
+
+        <section id="collapses">
+          <h3>Collapse</h3>
+          <h5>Padrão</h5>
+          <ul class="collapsible dark">
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">filter_drama</i>First
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">place</i>Second
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">whatshot</i>Third
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+          </ul>
+          <h5>Clear Padrão</h5>
+          <ul class="collapsible clear">
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">filter_drama</i>First
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">place</i>Second
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">whatshot</i>Third
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+          </ul>
+          <h5>Clear cores</h5>
+          <ul class="collapsible clear secondary">
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">filter_drama</i>First
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">place</i>Second
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">whatshot</i>Third
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible clear info">
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">filter_drama</i>First
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">place</i>Second
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">whatshot</i>Third
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible clear energy">
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">filter_drama</i>First
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">place</i>Second
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">whatshot</i>Third
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+          </ul>
+          <h5>Dark cores</h5>
+          <ul class="collapsible dark warning">
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">filter_drama</i>First
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">place</i>Second
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">whatshot</i>Third
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible dark danger">
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">filter_drama</i>First
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">place</i>Second
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">whatshot</i>Third
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible dark success">
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">filter_drama</i>First
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">place</i>Second
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">whatshot</i>Third
+              </div>
+              <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <hr />
+
+        <section id="dropdown">
+          <h3>Dropdown</h3>
+          <h5>Padrão</h5>
+          <a class="dropdown-trigger btn" href="#!" data-target="dropdown2"
+            >Drop Me!</a
+          >
+
+          <ul id="dropdown2" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li>
+              <a href="#!"><i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#!"><i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
+
+          <h5>Dark Cores</h5>
+
+          <a
+            class="dropdown-trigger btn secondary"
+            href="#!"
+            data-target="dropdown3"
+            >Drop Me!</a
+          >
+
+          <ul id="dropdown3" class="dropdown-content secondary">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li>
+              <a href="#!"><i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#!"><i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
+
+          <a class="dropdown-trigger btn info" href="#!" data-target="dropdown4"
+            >Drop Me!</a
+          >
+
+          <ul id="dropdown4" class="dropdown-content info">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li>
+              <a href="#!"><i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#!"><i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
+
+          <a
+            class="dropdown-trigger btn energy"
+            href="#!"
+            data-target="dropdown5"
+            >Drop Me!</a
+          >
+
+          <ul id="dropdown5" class="dropdown-content energy">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li>
+              <a href="#!"><i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#!"><i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
+
+          <a
+            class="dropdown-trigger btn warning"
+            href="#!"
+            data-target="dropdown6"
+            >Drop Me!</a
+          >
+
+          <ul id="dropdown6" class="dropdown-content warning">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li>
+              <a href="#!"><i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#!"><i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
+
+          <a
+            class="dropdown-trigger btn danger"
+            href="#!"
+            data-target="dropdown7"
+            >Drop Me!</a
+          >
+
+          <ul id="dropdown7" class="dropdown-content danger">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li>
+              <a href="#!"><i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#!"><i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
+
+          <a
+            class="dropdown-trigger btn success"
+            href="#!"
+            data-target="dropdown8"
+            >Drop Me!</a
+          >
+
+          <ul id="dropdown8" class="dropdown-content success">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li>
+              <a href="#!"><i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#!"><i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
+
+          <h5>Clear Cores</h5>
+          <a
+            class="dropdown-trigger btn btn-ghost"
+            href="#!"
+            data-target="dropdown9"
+            >Drop Me!</a
+          >
+
+          <ul id="dropdown9" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li>
+              <a href="#!"><i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#!"><i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
+
+          <a
+            class="dropdown-trigger btn btn-ghost secondary"
+            href="#!"
+            data-target="dropdown10"
+            >Drop Me!</a
+          >
+
+          <ul id="dropdown10" class="dropdown-content secondary">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li>
+              <a href="#!"><i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#!"><i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
+
+          <a
+            class="dropdown-trigger btn btn-ghost info"
+            href="#!"
+            data-target="dropdown11"
+            >Drop Me!</a
+          >
+
+          <ul id="dropdown11" class="dropdown-content info">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li>
+              <a href="#!"><i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#!"><i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
+
+          <a
+            class="dropdown-trigger btn btn-ghost energy"
+            href="#!"
+            data-target="dropdown12"
+            >Drop Me!</a
+          >
+
+          <ul id="dropdown12" class="dropdown-content energy">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li>
+              <a href="#!"><i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#!"><i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
+
+          <a
+            class="dropdown-trigger btn btn-ghost warning"
+            href="#!"
+            data-target="dropdown13"
+            >Drop Me!</a
+          >
+
+          <ul id="dropdown13" class="dropdown-content warning">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li>
+              <a href="#!"><i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#!"><i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
+
+          <a
+            class="dropdown-trigger btn btn-ghost danger"
+            href="#!"
+            data-target="dropdown14"
+            >Drop Me!</a
+          >
+
+          <ul id="dropdown14" class="dropdown-content danger">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li>
+              <a href="#!"><i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#!"><i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
+
+          <a
+            class="dropdown-trigger btn btn-ghost success"
+            href="#!"
+            data-target="dropdown15"
+            >Drop Me!</a
+          >
+
+          <ul id="dropdown15" class="dropdown-content success">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li>
+              <a href="#!"><i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#!"><i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
+        </section>
+
+        <hr />
+
+        <section id="tabs">
+          <h3>Tabs</h3>
+          <h5>Padrão</h5>
+          <div class="row">
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s3"><a href="#test1">Test 1</a></li>
+                <li class="tab col s3">
+                  <a class="active" href="#test2">Test 2</a>
+                </li>
+                <li class="tab col s3 disabled">
+                  <a href="#test3">Disabled Tab</a>
+                </li>
+                <li class="tab col s3"><a href="#test4">Test 4</a></li>
+              </ul>
+            </div>
+            <div id="test1" class="col s12">Test 1</div>
+            <div id="test2" class="col s12">Test 2</div>
+            <div id="test3" class="col s12">Test 3</div>
+            <div id="test4" class="col s12">Test 4</div>
+          </div>
+          <h5>Clear</h5>
+          <div class="row">
+            <div class="col s12">
+              <ul class="tabs clear">
+                <li class="tab col s3"><a href="#test5">Test 1</a></li>
+                <li class="tab col s3">
+                  <a class="active" href="#test6">Test 2</a>
+                </li>
+                <li class="tab col s3 disabled">
+                  <a href="#test7">Disabled Tab</a>
+                </li>
+                <li class="tab col s3"><a href="#test8">Test 4</a></li>
+              </ul>
+            </div>
+            <div id="test5" class="col s12">Test 1</div>
+            <div id="test6" class="col s12">Test 2</div>
+            <div id="test7" class="col s12">Test 3</div>
+            <div id="test8" class="col s12">Test 4</div>
+          </div>
+        </section>
+
+        <section id="tables">
+          <h3>Tabelas</h3>
+          <table class="highlight responsive-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Alvin</td>
+                <td>Eclair</td>
+                <td>$0.87</td>
+              </tr>
+              <tr>
+                <td>Alan</td>
+                <td>Jellybean</td>
+                <td>$3.76</td>
+              </tr>
+              <tr>
+                <td>Jonathan</td>
+                <td>Lollipop</td>
+                <td>$7.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="pagination">
+          <h3>Paginação</h3>
+          <ul class="pagination">
+            <li class="disabled">
+              <a href="#!"><i class="material-icons">chevron_left</i></a>
+            </li>
+            <li class="active"><a href="#!">1</a></li>
+            <li class="waves-effect"><a href="#!">2</a></li>
+            <li class="waves-effect"><a href="#!">3</a></li>
+            <li class="disabled"><a href="#!">4</a></li>
+            <li class="waves-effect"><a href="#!">5</a></li>
+            <li class="waves-effect">
+              <a href="#!"><i class="material-icons">chevron_right</i></a>
+            </li>
+          </ul>
+        </section>
+
+        <section id="footer">
+          <h3>Rodapé</h3>
+          <footer class="page-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Footer Content</h5>
+                  <p class="grey-text text-lighten-4">
+                    You can use rows and columns here to organize your footer
+                    content.
+                  </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Links</h5>
+                  <ul>
+                    <li>
+                      <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+                    </li>
+                    <li>
+                      <a class="grey-text text-lighten-3" href="#!">Link 2</a>
+                    </li>
+                    <li>
+                      <a class="grey-text text-lighten-3" href="#!">Link 3</a>
+                    </li>
+                    <li>
+                      <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!"
+                  >More Links</a
+                >
+              </div>
+            </div>
+          </footer>
+        </section>
+
+        <hr>
+
+        <section id="floating-button">
+          <h3>Floating Action Button</h3>
+          <p>
+            Esse código tem que ser escrito em outra tela pois assim dá para
+            fazer o exemplo, caso contrário, o FAB iria fica fixo na tela e
+            atrapalharia com os outros exemplo desse Guide Style
+          </p>
+          <a class="btn btn-large" href="floating-button.html">Veja aqui</a>
+        </section>
+
+        <hr>
+
+        <section id="cards">
+          <h3>Cards</h3>
+            <div class="col s12">
+              <h5 class="header">Horizontal Card</h5>
+              <div class="card horizontal z-depth-0">
+                <div class="card-image hide-on-med-and-down col s4 valign-wrapper">
+                  <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </div>
+                <div class="card-stacked col s8">                  
+                  <div class="card-content">
+                    <h3 class="card-content-title">Desenvolvedor Fullstack</h3>
+                    <p>                             
+                      <span class="span-with-icons"><i class="material-icons">work</i> XYZ Ltda </span>                                                    
+                      <span class="span-with-icons"><i class="material-icons">show_chart</i>  Jr/Pleno</span>
+                      <span class="span-with-icons"><i class="material-icons">attach_file</i>  CLT</span>
+                      <span class="span-with-icons"><i class="material-icons">attach_money</i>  de 1.001 até 2.000</span>
+                      <span class="span-with-icons"><i class="material-icons">place</i> Salvador</span>
+                      <span class="span-with-icons"><i class="material-icons">local_airport</i> Remoto</span>
+                      <span class="span-with-icons"><i class="material-icons">location_city</i> Local</span>
+                    </p>                   
+                  </div>
+                  <div class="card-action">
+                    <a class="btn warning" href="#">HTML5</a>
+                    <a class="btn warning" href="#">CSS3</a>
+                    <a class="btn warning" href="#">JS</a>
+                    <a class="btn warning" href="#">Php</a>
+                    <a class="btn warning" href="#">SQL</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./dist/materialize/js/materialize.min.js"></script>
+    <script>
+      //navbar and sidebar
+      $(".sidenav").sidenav();
+
+      //dropdown
+      $(".dropdown-trigger").dropdown();
+
+      //collapse
+      $(".collapsible").collapsible();
+
+      //tabs
+      $(document).ready(function() {
+        $(".tabs").tabs();
+      });
+    </script>
+  </body>
+</html>

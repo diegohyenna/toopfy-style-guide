@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Toopfy Guia de Estilos</title>
+
+  <link rel="stylesheet" href="./materialize/css/materialize.min.css" media="screen,projection">
+  <link rel="stylesheet" href="./css/toopfy.guide.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+
+  {{{body}}}
+
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./materialize/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, options);
+    });
+
+    // Or with jQuery
+
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+
+  </script>
+
+</body>
+
+</html>
