@@ -1,7 +1,8 @@
 // @import '../materialize/css/materialize.min.css';
 
 /* Cores */
-$color-dark: black;
+$color-dark: #000113;
+$color-default: #1a1c45; 
 $color-white: white;
 $color-ghost: transparent;
 
@@ -28,7 +29,6 @@ $color-info-dark: #0F002B;
 $color-info-light: #7E7BFC;
 $color-info-highlight: #C9C7FE;
 
-
 $color-energy: #E2E805;
 $color-energy-dark: #BDC204;
 $color-energy-light: #F9FC7A;
@@ -53,7 +53,7 @@ $color-success-highlight: #DAFEDB;
 /* -- Fontes -- */
 $font-family-default: "BalooBhaiRegular", Arial, Helvetica, sans-serif;
 $font-family-default-size: 16px;
-$font-family-default-color: $color-primary;
+$font-family-default-color: $color-default;
 
 $font-family-default-size-h1: 32px;
 $font-family-default-size-h2: $font-family-default-size-h1 - 4px;
@@ -115,7 +115,7 @@ h5 {
 
 hr {
   border: none;
-  border-bottom: 5px solid $color-primary-dark;
+  border-bottom: 2px solid $color-primary-highlight;
   margin: 30px 0;
 }
 
@@ -747,6 +747,7 @@ nav {
   border: none;
 
   .collapsible-header {
+    line-height: 25px;
     background-color: $color-primary;
     color: $color-white;
     border-color: $color-primary-dark;
@@ -1167,6 +1168,12 @@ nav {
 }
 
 /** -- TABLES -- **/
+table {
+  th {
+    color: $color-primary;
+    font-weight: normal;
+  }
+}
 
 
 /** -- PAGINATION -- **/
@@ -1217,7 +1224,7 @@ nav {
 /** -- CARDS -- **/
 .card{
   &.horizontal {
-    border-bottom: 5px solid $color-primary;
+    border-bottom: 5px solid $color-primary-highlight;
     border-radius: 0;
 
     .card-image.col{
@@ -1256,7 +1263,212 @@ nav {
     transform: translateY(25%);
   }
 }
+/** -- BREADCRUMBS -- **/
+.breadcrumbs{
+  box-shadow: none;
+  height: 40px;
+  line-height: 40px;
 
+  border-bottom: 4px solid $color-primary-highlight;
+
+  .col {
+    padding: 0;
+
+    .breadcrumb {
+      color: $color-primary-light;
+
+      &:before{
+        color: $color-primary-light;
+      }
+
+      &:last-child{
+        color: $color-white;
+      }
+    }
+  }
+
+  &.secondary {
+    background: $color-secondary;
+    color: $color-white;
+    border-bottom: 4px solid $color-primary-highlight;
+
+    .breadcrumb {
+      color: $color-primary-highlight;
+
+      &:before{
+        color: $color-primary-highlight;
+      }
+
+    }
+  }
+
+  &.info {
+    background: $color-info;
+    color: $color-white;
+    border-bottom: 4px solid $color-info-highlight;
+
+    .breadcrumb {
+      color: $color-info-highlight;
+
+      &:before{
+        color: $color-info-highlight;
+      }
+      
+    }
+  }
+
+  &.energy {
+    background: $color-energy;
+    color: $color-white;
+    border-bottom: 4px solid $color-energy-highlight;
+
+    .breadcrumb {
+      color: $color-energy-highlight;
+
+      &:before{
+        color: $color-energy-highlight;
+      }
+      
+    }
+  }
+
+  &.warning {
+    background: $color-warning;
+    color: $color-white;
+    border-bottom: 4px solid $color-warning-highlight;
+
+    .breadcrumb {
+      color: $color-warning-highlight;
+
+      &:before{
+        color: $color-warning-highlight;
+      }
+      
+    }
+  }
+
+  &.danger {
+    background: $color-danger;
+    color: $color-white;
+    border-bottom: 4px solid $color-danger-highlight;
+
+    .breadcrumb {
+      color: $color-danger-highlight;
+
+      &:before{
+        color: $color-danger-highlight;
+      }
+      
+    }
+  }
+
+  &.success {
+    background: $color-success;
+    color: $color-white;
+    border-bottom: 4px solid $color-success-highlight;
+
+    .breadcrumb {
+      color: $color-success-highlight;
+
+      &:before{
+        color: $color-success-highlight;
+      }
+      
+    }
+  }
+}
+
+/** -- PRE LOADER -- **/
+.progress {
+
+  background-color: $color-primary-highlight;
+
+  .determinate {
+    background-color: $color-primary;
+  }
+
+  .indeterminate {
+    background-color: $color-primary;
+  }
+
+  &.secondary {
+
+    background-color: $color-secondary-highlight;
+
+    .determinate {
+      background-color: $color-secondary;
+    }
+  
+    .indeterminate {
+      background-color: $color-secondary;
+    }
+  }
+
+  &.info {
+
+    background-color: $color-info-highlight;
+
+    .determinate {
+      background-color: $color-info;
+    }
+  
+    .indeterminate {
+      background-color: $color-info;
+    }
+  }
+
+  &.energy {
+
+    background-color: $color-energy-highlight;
+
+    .determinate {
+      background-color: $color-energy;
+    }
+  
+    .indeterminate {
+      background-color: $color-energy;
+    }
+  }
+
+  &.warning {
+
+    background-color: $color-warning-highlight;
+
+    .determinate {
+      background-color: $color-warning;
+    }
+  
+    .indeterminate {
+      background-color: $color-warning;
+    }
+  }
+
+  &.danger {
+
+    background-color: $color-danger-highlight;
+
+    .determinate {
+      background-color: $color-danger;
+    }
+  
+    .indeterminate {
+      background-color: $color-danger;
+    }
+  }
+
+  &.success {
+
+    background-color: $color-success-highlight;
+
+    .determinate {
+      background-color: $color-success;
+    }
+  
+    .indeterminate {
+      background-color: $color-success;
+    }
+  }
+}
 
 
 
