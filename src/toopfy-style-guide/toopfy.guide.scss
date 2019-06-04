@@ -1204,6 +1204,12 @@ table {
   color: $color-white;
   background-color: $color-primary;
 
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  
+
   .footer-copyright {
     color: $color-white;
 
