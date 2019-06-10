@@ -11,6 +11,8 @@ Um guia para formatar os estilos de css no projeto Toopfy.
 
   - ```npm install```;
   - Depois apenas abra o arquivo ```index.html``` e veja a brincadeira funcionar
+ 
+  - Ou veja em http://github.io/toopfy-style-guide
 
 # Para editar os estilos:
 
